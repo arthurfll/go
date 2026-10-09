@@ -1,9 +1,12 @@
+```go
+
+
 package main
 
 import "fmt"
 
 func main() {
-	lista := []int{9,8,7,6,5,4,3,2,1,0}
+	lista := []int{7,3,9,6,1,8,2,5,0,4}
 	var temp int
 	var cont int
 
@@ -16,17 +19,12 @@ func main() {
 				lista[i] = lista[i+1]
 				lista[i+1] = temp
 				cont++
-				fmt.Println(lista)
-			} else {
-				continue
 			}
 		if cont == 0 {
 			break
 		}
 	}
 	}
-
-
 
 	fmt.Println(lista)
 }
